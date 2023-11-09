@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashActivity"
+    android:backgroundTint="@color/background"
+    >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/dash_img1"
+        />
+
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/logot"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:paddingRight="20dp"
+        android:id="@+id/dash_back"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Pilih Aplikasi"
+        android:id="@+id/dash_txt1"
+        android:layout_below="@id/dash_img1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_below="@id/dash_txt1"
+       android:padding="34dp"
+        android:gravity="top|center"
+       android:layout_marginTop="23dp"
+        android:layout_marginLeft="20dp"
+       android:id="@+id/dash_ly1">
+
+       <ImageView
+           android:layout_width="70dp"
+           android:layout_height="70dp"
+           android:src="@drawable/cal"
+           android:clickable="true"
+           android:id="@+id/dash_cal"
+
+           />
+
+       <TextView
+           android:id="@+id/dash_txt2"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_below="@id/dash_cal"
+           android:layout_marginTop="5dp"
+           android:fontFamily="@font/poppinssemibold"
+           android:text="Calculator"
+           android:gravity="center"
+           android:textColor="@color/black"
+           android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/dash_txt1"
+        android:padding="34dp"
+        android:gravity="top|center"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="200dp"
+        android:id="@+id/dash_ly2">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/bmi"
+            android:clickable="true"
+            android:id="@+id/dash_bmi"
+
+            />
+
+        <TextView
+            android:id="@+id/dash_txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/dash_bmi"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Bmi"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dash_ly3"
+        android:orientation="vertical"
+        android:layout_below="@id/dash_ly2"
+        android:padding="34dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="top|center"
+
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/kon"
+            android:clickable="true"
+            android:id="@+id/dash_kon"/>
+
+        <TextView
+            android:id="@+id/dash_txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/dash_cal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Mata Uang"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/dash_ly2"
+        android:padding="34dp"
+        android:gravity="top|center"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="200dp"
+        android:id="@+id/dash_ly4">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/me"
+            android:clickable="true"
+            android:id="@+id/dash_about"
+
+            />
+
+        <TextView
+            android:id="@+id/dash_txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/dash_bmi"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="About"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
